@@ -1,0 +1,54 @@
+.container {
+    float: none;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-top: 30px;
+}
+
+fieldset > legend {
+    color: #2e6da4;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+span {
+    font-size: 10px;
+    color: red;/*add bottom padding*/
+}
+
+table {
+    width: 250px;
+    float: left;
+    margin-right: 30px;
+}
+
+button {
+    margin-top: 10px;
+    float: right;
+}
+
+
+/*--------------------------------- RESPONSIVE ----------------------------*/
+
+@media (max-width: 768px){
+
+    .container {
+        width: auto;
+    }
+
+    table {
+        margin-right: 0px;
+        float: none
+    }
+
+    form:last-of-type table{
+        margin-top: 5px;
+    }
+}

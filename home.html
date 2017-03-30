@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Form</title>
+</head>
+<body>
+<div class="container col-lg-6 col-md-6 col-sm-6  col-xs-4">
+    <form id="form">
+        <fieldset class="fieldset">
+            <legend>Identity: </legend>
+            <table>
+                <tr>
+                    <td><label for="firstName">Name: </label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">
+                        <span id="firstNameError"></span>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><label for="lastName">Family: </label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
+                        <span id="lastNameError"></span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Account: </legend>
+
+            <label for="id">National ID: </label>
+            <input type="text" class="form-control" name="id" id="id" placeholder="ID">
+            <span id="idError"></span>
+
+            <label for="email">Email: </label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="user@domain.com">
+            <span id="emailError"></span>
+
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="password">
+            <span id="passwordError"></span>
+
+            <label for="rePassword">Retype password: </label>
+            <input type="password" class="form-control" name="rePassword" id="rePassword" placeholder="retype password">
+            <span id="rePasswordError"></span>
+
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Financial: </legend>
+            <label for="income">Income: </label>
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" name="income" id="income" placeholder="">
+                <span class="input-group-addon">.00</span>
+            </div>
+            <span id="incomeError"></span>
+        </fieldset>
+        <button class="btn">Register</button>
+    </form>
+</div>
+
+<script src="script/jquery-3.1.1.js"></script>
+<script src="script/bootstrap.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>
