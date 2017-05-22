@@ -38,9 +38,7 @@ function doit() {
         } else {
             emailErrMsg="";
         }
-console.log(re.test("alizamani@gmail.com"));
-        console.log("ok");
-        console.log(email);
+
         var pass1=_("password").value;
         if (pass1.length<6){
             var pass1ErrMsg="Password should be at least 6 characters!<br>";
